@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Kolker Brush", sans-serif;
+	/* font-size:3em; */
+}
+
+
+img {
+    float: top;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+h1{
+    text-align: center;
+    color: orangered;
+    font-family: 'Kolker Brush', serif;
+    font-size: 120px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+h2 {
+    font-size: xx-large;
+    font-family: "Kolker Brush", sans-serif;
+    float: bottom;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: "Kolker Brush", sans-serif;
+    color: white;
+    font-size: xx-large;
+}
+
+p {
+    font-family: "Kolker Brush", sans-serif;
+    font-size: xxx-large;
+    color: yellow;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    display: inline;
+    text-align: center;
+    border-right: 1px solid white;
+}
+li a {
+    font-family: "Kolker Brush";
+    font-size: xx-large;
+    display: block;
+    color: orangered;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+div {
+    font-family: sans-serif;
+    color: orange;
+}
+.heading-primary {
+    text-transform: uppercase;
+    backface-visibility: visible;
+    margin-bottom: 60px;
+}
+
+.card {
+    font-size: 50px;
+}
+
+
+.button:link,
+.button:visited {
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.button:active{
+    transform: translate(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* .button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+} */
+
+
+
+.button:hover::after{
+    transform: scaleX(1.05) scaleY(1.1);
+    background-color: #fff;
+    opacity:1;
+}
+
+.button-animated{
+    animation: moveInButton .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+table, th, td {
+    margin: auto;
+    color: yellow;
+    border: 1px solid orangered;
+}
+
+td {
+	cursor: default;
+	user-select: none; /* Standard syntax */
+    padding: 5px;
+}
+
+.game {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.game p {
+  font-weight: bold;
+  font-size:2em;
+}

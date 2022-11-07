@@ -1,0 +1,7 @@
+ChuckNorris,admin,33
+Matchbot3000,Test11,38
+Matchbox,Test22,42
+Skynet,Test111,45
+admin,admin,1000
+schaum,Sc1234,1000
+admin22,admin22,1000
